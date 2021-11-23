@@ -1,0 +1,498 @@
+/*
+Author: Natalia Douglas
+Date: 9/29/2021
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h3, ul, .container, .desktope, .center, article, section, figure, figcaption, p, img, audio {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+   background-color: #e2eae2;
+}
+audio {
+  margin: 0 auto;
+}
+
+/* Style rules for mobile viewport */
+  
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile {
+    display: block;
+}
+.tablet-desktop, .desktope p, #nav-links, .td {
+    display: none;
+}
+
+/*Stule rules for header*/
+header {
+    text-align: center;
+    font-size: 3em;
+    color: #996600;
+    background-color: #669999;
+    font-family: Georgia, Times, serif;
+}
+header h1 {
+   font-family: 'Coustard', serif;
+   -webkit-text-stroke: 2px black;
+   text-shadow: 1px 1px black;
+   font-style: italic;
+   padding: 1%;
+   font-size: 1em;
+}
+header h3 {
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 1px black;
+    font-size: 0.7em;
+    padding: 2%;
+}
+.center {
+    margin: 0 auto;
+}
+figure { 
+   /*border: 4px solid #581845;
+   box-shadow: 6px 6px 10px #c5a687;*/
+   max-width: 75%;
+   margin: 0 auto;
+}
+img.figure {
+  max-width: 50%;
+  margin: 0 auto;
+}
+figcaption {
+   font-size: 0.7em;
+   padding: 2%;
+   border-top: none;
+   -webkit-text-stroke: 2px black;
+   text-shadow: 1px 1px black;
+}
+.link {
+    color: #132913;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+article {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px #c5a687;
+}
+section p {
+    font-size: 1em;
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+    color: #132913;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;  
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #364a36;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e2eae2;
+}
+main p {
+    font-size: 1.75em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.map {
+    border: 10px solid #132913;
+    width: 95%;
+    height: 50%;
+}
+#contact {
+    text-align: center;
+}
+#contact p {
+  font-size: 1.5em;
+}
+.tel-link {
+    background-color: #132913;
+    padding: 2%;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 115%;
+}
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.round {
+    border-radius: 15px;
+}
+main ul {
+    margin-left: 10%;
+}
+.about  {
+  margin: 0 auto;
+}
+.about h1 {
+  text-align: center;
+}
+.about p {
+  margin: 0 auto;
+}
+
+/* Style rules for form elements */
+#form {
+    width: 70%;
+}
+input {
+    margin-bottom: 3%;
+}
+label {
+    display: block;
+    padding-top: 3%;
+}
+form #submit {
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #98b497;
+    font-size: 1em;
+}
+
+/* Style rules for photos container */
+.container {
+  width: 80%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.container ul li {
+  list-style: none;
+  float: left;
+  font: 10px/1.5 Verdana, Helvetica, Sans-serif;
+  width: 96%;
+  margin: 2% 2% 40px 2%;
+}
+.container ul li a {
+  color: #000;
+}
+.container ul li a img {
+  max-width: 100%;
+  border: 2px solid #fff;border-radius: 10px; box-shadow: 2px 3px 8px -2px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 100%  3x4%=12  100-12=88  88/3=29.333*/
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 1em;
+    background-color: #132913;
+    color: #e2eae2;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #e2eae2;
+    text-decoration: none;
+}
+i {
+  display: inline-block;
+  padding: 2%;
+}
+
+/*Media Query for Tablet Viewport*/
+@media only screen and (min-width: 600px), print {
+
+/*Tablet Viewport: Show tab-desk class, hide mobile class*/
+.tablet-desktop, .td  {
+    display: block;
+}
+
+.tel-link, .mobile, .mobile-tablet, .mobile-nav {
+    display: none;
+}
+
+ /* Tablet Viewport: Style rules for nav area */
+/*Desktop Viewport: Style rules for nav area*/
+nav {
+    background-color: #132913;
+}
+
+nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: inline-block;
+    margin: 0 auto;
+    color: #e2eae2;
+    -webkit-text-stroke: 1px #996600;
+    text-shadow: 1px 1px black;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+header h1 {
+   padding: 1%;
+   font-size: 1.5em;
+}
+header h3 {
+  font-size: 0.9em;
+  padding: 2%;
+}
+figure { 
+    max-width: 50%;
+    margin: 1% auto;
+    border: none;
+    box-shadow: none;
+}
+figcaption {
+    font-size: 0.7em;
+}
+img.figure {
+  max-height: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+ /* Tablet Viewport: Style rule for main content */
+.map {
+   width: 525px;
+   height: 450px;
+}
+
+/*Tablet Viewport: Style rule for photos container*/
+.container ul li {
+  width: 29.333%;
+  margin: 2% 2% 40px 2%;
+}
+.container ul li a img {
+  width: 100%;
+  /*border: 2px solid #fff;border-radius: 10px; box-shadow: 2px 3px 8px -2px;*/
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablet Viewport: Style rules for table */
+table {
+   border: 1px solid #000;
+   border-collapse: collapse;
+   margin: 0 auto;
+   width: 100%;
+}
+caption {
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1%;
+}
+th, td {
+   border: 1px solid #000;
+   padding: 2%;
+}
+th {
+   background-color: #98b497;
+   color: #132913;
+   font-size: 1.15em;
+} 
+
+/* Style rule for form */
+#form {
+   width: 60%;
+   margin: 0 auto; 
+}
+}
+
+/*Media Query for Desktop Viewport*/
+@media only screen and (min-width: 900px), print {
+
+/*Desktop Viewport: Show desktop class, hide mobile-tablet class*/  
+.desktop  {
+  display: block;
+}
+.mobile-tablet, .mobile, .mobile-nav, figcaption   {
+  display: none;
+}
+
+/*Desktop Viewport: Style rules for header*/
+.wrapper{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  max-height: 550px;
+  max-width: 100%;
+}
+.desktope p {
+  display: block;
+  margin-left: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: black;
+  -webkit-text-stroke: 1px #996600;
+  /*text-shadow: 1px 1px #996600;*/
+}
+
+img {
+   /*max-width: 80%;*/
+   max-height: 90%;
+   display: block;
+}
+figure {
+   border: none;
+   box-shadow: none;
+   max-width: 100%;
+   max-height: 50%;
+   margin: 0.5%;
+}
+figcaption {
+    font-size: 1em;
+    margin-top: 2%;
+}
+header h3 {
+    padding: 8% 2% 2% 2%;
+}
+ 
+/*Desktop Viewport: Style rules for nav area*/
+nav {
+    background-color: #132913;
+}
+
+nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: inline-block;
+    margin: 0 auto;
+    color: #e2eae2;
+    -webkit-text-stroke: 1px #996600;
+    text-shadow: 1px 1px black;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/*Desktop Viewport: Style rules for main area*/
+article {
+  font-size: 1em;
+  padding: 2%;
+}
+section {
+  font-size: 1em;
+  padding: 2%;
+}
+ /* Style rule for form */
+#form {
+   width: auto;
+   margin: 0 auto;
+}
+
+/* Style rule for photos container */
+.container ul li {
+  width: 12.66%;
+  margin: 2% 2% 40px 2%;
+}
+.container ul li a img {
+  width: 100%;
+}
+}
+
+/*Media Query for Large Desktop Viewports*/
+@media only screen and (min-width: 1921px), print {
+
+body {
+    background: linear-gradient(#f6eee4, #e2eae2);
+} 
+nav li {
+    font-size: 2.7em;
+    border-top: 0.6px solid #669999;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+  /*Desktop Viewport: Style rules for header*/
+.wrapper{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  max-height: 900px;
+  max-width: 100%;
+}
+.desktop{
+  max-height: 50%;
+  max-width: 100%; 
+}
+.desktope p {
+  display: block;
+  margin-left: 0;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: black;
+  -webkit-text-stroke: 1px #996600;
+  /*text-shadow: 1px 1px #996600;*/
+}
+
+img.figure {
+   max-width: 90%;
+   max-height: 80%;
+   display: block;
+}
+figure {
+   display: block;
+   border: none;
+   box-shadow: none;
+   max-width: 90%;
+   max-height: 50%;
+   margin: 0.5%;
+}
+figcaption {
+    font-size: 1.3em;
+    margin-top: 2%;
+}
+header h3  {
+  font-size: 2em;
+}
+header h1  {
+  font-size: 2.5em;
+}
+/*Desktop Viewport: Style rules for main area*/
+article {
+  font-size: 2em;
+  padding: 2%;
+}
+section {
+  font-size: 2em;
+  padding: 2%;
+}
+}
+
+
+
