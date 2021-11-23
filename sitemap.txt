@@ -1,0 +1,5 @@
+htrtp://www.exampledomain.com/about.html
+htrtp://www.exampledomain.com/contact.html
+htrtp://www.exampledomain.com/index.html
+htrtp://www.exampledomain.com/photos.html
+htrtp://www.exampledomain.com/work.html

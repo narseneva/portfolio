@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+	Student Name: Natalia Douglas
+	File Name: contact.html
+	Date: 9/29/2021
+ -->
+<html lang="en">
+<head>
+	<title>Natalia Douglas/ Contacts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My email, phone, location. You can contact me at any time">
+  <link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="career.html">Career</a>
+                <a href="work.html">Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+	<header>
+		 <h1>Natalia Douglas</h1>
+  <div>
+      <figure> 
+       <figcaption>Web developer</figcaption>
+     </figure>
+  </div> 
+	</header>
+
+	<nav class="td">
+		<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </ul>
+	</nav>
+
+	<!-- Use the main area to add the main content of the webpage -->
+	<main>
+
+		  <div id="contact">
+					<h2>You can reach me at:</h2>
+					<p><a href="mailto:student@email.net" class="link">student@email.net</a></p>
+					<p>Telephone: 814-555-2376</p>
+					<p>My college is located at:</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449260.0862022458!2d-82.76851193719484!3d28.393766582604666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2974d054916b1%3A0x98e5a45443f60db!2sPasco-Hernando+State+College!5e0!3m2!1sen!2sus!4v1558366207337!5m2!1sen!2sus" width="600" height="450" class="map" allowfullscreen></iframe>
+		    </div>
+
+        <div id="form">
+          <h2>Complete the form below and I will contact with you.</h2>
+          <form class="form-grid"><!--Start Form-->
+
+            <fieldset>
+              <legend>Your Information</legend>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" required>
+
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required>
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional Information</legend>
+                <p>I would like more information about:</p>
+                  <label for="faser"><input type="checkbox" name="interest" id="faser" value="Fast Service">Fast Service</label> 
+                  <label for="reser"><input type="checkbox" name="interest" id="reser" value="Regular Service">Regular Service</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Referral Sourse</legend>
+                <label for="reference">How did you find us?</label>
+                <select name="reference" id="reference">
+                  <option value="friend">Friend</option>
+                  <option value="google">Google</option>
+                  <option value="social">Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+
+                <label for="questions">Questions?</label>
+                <textarea id="questions" name="questions" rows="5" cols="35"></textarea>    
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn">
+          </form>  
+        </div>
+			</main>
+
+		<footer>
+    <div class="copyright">
+		  <p>&copy; Copyright 2021. All Rights Reserved.</p>
+		  <p><a href="mailto:student@email.net">student@email.net</a></p>
+    </div>
+
+    <div class="social">
+      <a href=https://www.facebook.com target="_blank">
+      <i class="fab fa-facebook-square"></i>
+         
+      <a href=https://www.twitter.com target="_blank">
+      <i class="fab fa-twitter-square"></i></a>
+    </div>
+	</footer>
+
+<script src="scripts/script.js"></script>
+
+		</body>
+		</html>
+
+	
